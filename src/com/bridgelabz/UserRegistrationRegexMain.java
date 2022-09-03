@@ -34,5 +34,9 @@ public class UserRegistrationRegexMain {
         System.out.println("Enter password should have atleast one numeric number: ");
         String passwordRule3= sc.next();
         userRegistrationRegex.passwordRule3(passwordRule3);
+
+        System.out.println("Enter exactly one special character in password");
+        String passwordRule4 = sc.next();
+        userRegistrationRegex.passwordRule4(passwordRule4);
     }
 }
