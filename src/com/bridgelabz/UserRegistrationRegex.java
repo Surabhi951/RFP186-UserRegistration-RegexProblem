@@ -48,4 +48,15 @@ public class UserRegistrationRegex {
             System.out.println("Mobile number is invalid");
         }
     }
+
+    public void passwordRule1(String passwordRule1) {
+        Pattern pattern = Pattern.compile("[0-9a-zA-Z@!+_.-]{8,}");
+        Matcher match = pattern.matcher(passwordRule1);
+        if(match.matches()){
+            System.out.println("Mobile number is valid");
+        }
+        else {
+            System.out.println("Mobile number is invalid");
+        }
+    }
 }
