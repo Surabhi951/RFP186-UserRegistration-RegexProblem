@@ -13,5 +13,9 @@ public class UserRegistrationRegexMain {
         System.out.println("Enter last name: ");
         String lastName = sc.next();
         userRegistrationRegex.validLastName(lastName);
+
+        System.out.println("Enter email");
+        String email = sc.next();
+        userRegistrationRegex.validEmail(email);
     }
 }
