@@ -27,7 +27,6 @@ public class UserRegistrationRegex {
         }
     }
 
-
     public void validEmail(String email) {
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_.-]+@(.+)$");
         Matcher match = pattern.matcher(email);
@@ -36,6 +35,17 @@ public class UserRegistrationRegex {
         }
         else {
             System.out.println("email is invalid");
+        }
+    }
+
+    public void validMobileNo(String mobileNo) {
+        Pattern pattern = Pattern.compile("^[\\d]{2}\\s[\\d]{10}$");
+        Matcher match = pattern.matcher(mobileNo);
+        if(match.matches()){
+            System.out.println("Mobile number is valid");
+        }
+        else {
+            System.out.println("Mobile number is invalid");
         }
     }
 }
