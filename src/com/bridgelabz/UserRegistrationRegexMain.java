@@ -23,12 +23,20 @@ public class UserRegistrationRegexMain {
         String mobileNo = sc.nextLine();
         userRegistrationRegex.validMobileNo(mobileNo);
 
-        System.out.println("Enter password minimum 8 character");
+        System.out.println("Enter password minimum 8 character: ");
         String passwordRule1 = sc.next();
         userRegistrationRegex.passwordRule1(passwordRule1);
 
-        System.out.println("Enter atleast one upper case letter in password");
+        System.out.println("Enter atleast one upper case letter in password: ");
         String passwordRule2 = sc.next();
         userRegistrationRegex.passwordRule2(passwordRule2);
+
+        System.out.println("Enter password should have atleast one numeric number: ");
+        String passwordRule3= sc.next();
+        userRegistrationRegex.passwordRule3(passwordRule3);
+
+        System.out.println("Enter exactly one special character in password");
+        String passwordRule4 = sc.next();
+        userRegistrationRegex.passwordRule4(passwordRule4);
     }
 }
