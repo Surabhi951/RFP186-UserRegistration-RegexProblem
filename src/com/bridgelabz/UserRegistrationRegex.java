@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class UserRegistrationRegex {
 
+
     public void validFirstName(String firstName){
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
         Matcher match = pattern.matcher(firstName);
@@ -15,6 +16,7 @@ public class UserRegistrationRegex {
             System.out.println("First name is invalid");
         }
     }
+
 
     public void validLastName(String lastName) {
         Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
@@ -72,4 +74,3 @@ public class UserRegistrationRegex {
     }
 
 }
-
