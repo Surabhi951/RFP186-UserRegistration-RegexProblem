@@ -73,4 +73,14 @@ public class UserRegistrationRegex {
         }
     }
 
+    public void passwordRule3(String passwordRule3) {
+        Pattern pattern = Pattern.compile("(?=.*[0-9])[0-9a-zA-Z@!+_.]{8,}");
+        Matcher match = pattern.matcher(passwordRule3);
+        if(match.matches()){
+            System.out.println("Mobile number is valid");
+        }
+        else {
+            System.out.println("Mobile number is invalid");
+        }
+    }
 }
