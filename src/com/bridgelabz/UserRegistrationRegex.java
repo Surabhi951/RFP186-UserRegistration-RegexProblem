@@ -26,4 +26,16 @@ public class UserRegistrationRegex {
             System.out.println("Last name is invalid");
         }
     }
+
+
+    public void validEmail(String email) {
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_.-]+@(.+)$");
+        Matcher match = pattern.matcher(email);
+        if(match.matches()){
+            System.out.println("email is valid");
+        }
+        else {
+            System.out.println("email is invalid");
+        }
+    }
 }
