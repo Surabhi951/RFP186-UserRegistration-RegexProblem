@@ -72,27 +72,4 @@ public class UserRegistrationRegex {
             System.out.println("Password must have atleast one uppercase letter");
         }
     }
-
-    public void passwordRule3(String passwordRule3) {
-        Pattern pattern = Pattern.compile("(?=.*[0-9])[0-9a-zA-Z@!+_.]{8,}");
-        Matcher match = pattern.matcher(passwordRule3);
-        if(match.matches()){
-            System.out.println("Valid");
-        }
-        else {
-            System.out.println("Password must have atleast one numeric number");
-        }
-    }
-
-    public void passwordRule4(String passwordRule4) {
-        Pattern pattern = Pattern.compile("(?=.*[+._@!-])[0-9a-zA-Z@!+_.]{8,}");
-        Matcher match = pattern.matcher(passwordRule4);
-        if (match.matches()) {
-            System.out.println("Valid");
-        }
-        else {
-            System.out.println("Password must has exactly one special character");
-        }
-
-    }
 }
